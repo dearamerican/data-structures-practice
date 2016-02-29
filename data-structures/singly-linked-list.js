@@ -23,9 +23,9 @@ SinglyLinkedList.prototype.add = function(value) {
             currentNode = currentNode.next; // by resetting currentNode to be each successive node
         }
         //when there are no more "next" nodes, you've reached the end! here, set the currentNode's next value to the newly instantiated node, thereby adding it to the end of the list. 
-        currentNode.next = node;
+        currentNode.next = newNode;
         this.length++;
-        return node;
+        return newNode;
     }
 };
 
